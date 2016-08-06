@@ -14,6 +14,19 @@ Released   : 20140310
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Home - CNHS Class of '06 Reunion</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$(".meter > span").each(function() {
+				$(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+						width: $(this).data("origWidth")
+					}, 1200);
+			});
+		});
+	</script>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Chivo:400,900" rel="stylesheet" />
@@ -55,6 +68,7 @@ Released   : 20140310
             <h3>Goal Progress</h3>
             <div class="meter">
 		<span style="width: 1%"></span>
+		<br>
 		$0 of $1000
 	    </div>
             <p><a href="donate.html" class="icon-align-left button icon-paypal">Donate Now!</a></p>
